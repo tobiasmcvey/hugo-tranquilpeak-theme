@@ -31,6 +31,8 @@
     }
     amplitude.getInstance().logEvent("pageview",
     {
-        'url': window.location.origin + window.location.pathname
+        'url': window.location.origin + window.location.pathname,
+        'hostname': window.location.hostname,
+        'pagePath': window.location.pathname
     });
 </script>
