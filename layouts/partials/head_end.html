@@ -24,10 +24,10 @@
     ;e.amplitude=n})(window,document);
   
     if ( location.hostname == "localhost"){
-        amplitude.getInstance().init("c77543aaebe7abc76206f66afbabe34a");
+        amplitude.getInstance().init("c77543aaebe7abc76206f66afbabe34a", null, {includeUtm: true, includeReferrer: true});
     } else
     {
-        amplitude.getInstance().init("a44125b5c529218fc9a2d783c0b9f8ce");
+        amplitude.getInstance().init("a44125b5c529218fc9a2d783c0b9f8ce", null, {includeUtm: true, includeReferrer: true});
     }
     amplitude.getInstance().logEvent("pageview",
     {
