@@ -27,7 +27,7 @@
     {{ partial "head_start.html" . }}
     {{ partial "meta.html" . }}
     <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
-
+    <link rel="manifest" href="/images/site.webmanifest">
     <link rel="icon" href="{{ with .Site.Params.favicon }}{{ . }}{{ else }}/favicon.png{{ end }}">
     {{ with .OutputFormats.Get "RSS" }}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ .RelPermalink }}">
